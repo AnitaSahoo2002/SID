@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:  #0e1630;
+}
+/* .main{
+    background-image: url(pxfuel.jpg);
+    height: fit-content;
+    width: 100%;
+} */
+.nav{
+    background-color:#01071b;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav-right{
+    background-color:#01071b;
+    display: flex;
+    justify-content:right;
+    align-items:center;
+    /* position: absolute; */
+    min-height: 4rem;
+
+    
+}
+.effect{
+    color: cyan;
+}
+.nav-left{
+    margin-left: 2rem;
+    color: #808dad;
+    font-size: 1.7rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.nav ul li a{
+    margin-right: 2rem;
+    color: aliceblue;
+    font-size: 1.3rem;
+    transition: background 0.5s;
+}
+.nav ul li a:hover{
+    color: cyan;
+    transform: translateY(-2px);
+}
+
+/* //profile pic */
+.profile_pic{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.pic{
+    margin-top: 5rem;
+    width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    /* margin-right: -20rem; */
+}
+.pic img{
+    /* background-image:url("profile_pic.jpeg"); */
+   height: 30rem;
+   width: 30rem;
+display: inline;
+border-radius: 50%;
+
+}
+.intro{
+    margin-top: 7rem;
+    color: aliceblue;
+    width: 50%;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+
+}
+.about{
+    font-weight: lighter;
+    font-variant: normal;
+    line-height: 2.5rem;
+    color:#808dad;
+}
+.aboutme{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.design{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid white; */
+   padding: 20px;
+
+}
+.logo img{
+    width:20rem;
+    height: 20rem;
+    border: 6px solid white;
+    border-radius: 2.5rem;
+}
+.content{
+    color:aliceblue;
+    width:50%;
+    /* border: 6px solid white;
+    border-radius: 2.5rem; */
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 3rem;
+    background-color:rgb(23,31,56);
+    
+}
+.aboutme h2{
+    color: aliceblue;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+.service-list{
+    padding: 20px;
+}
+.service-list{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project-list{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px; 
+    height: 25rem; 
+}
+.ui-ux img{
+    width: 100%;
+    height: 30%;
+}
+.service-list h3{
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.desc{
+    color:#808dad;
+   
+    width:100%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-left: 1rem;
+    /* margin-right: 1rem; */
+    padding-right: 1rem;
+       
+}
+.card{
+    /* border: 2px solid white; */
+    transition: background 0.5s, transform 0.5s;
+    background-color: rgb(23,31,56);
+    opacity: 1;
+
+}
+/* .service-list a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-left: 3rem;
+    display: inline-block;
+} */
+.services h2{
+    color: aliceblue;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+    text-decoration: underline; 
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.projects h2{
+    color: aliceblue;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+    text-decoration: underline; 
+    margin-top: 1rem;
+    padding-top: 1rem; 
+}
+.project-list img{
+    height: 15rem;
+    width: 25rem;
+    margin-left: 2rem;
+
+}
+.project-list h3{
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+.project-list button{
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 8.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.project-list button:hover{
+    background-color:cyan;
+}
+.card:hover{
+    /* background-color:aquamarine; */
+    
+    transform: translateY(-1.5rem);
+}
+/* contact */
+.container{
+    margin-top: 5rem;
+}
+
+.row{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.left{
+    flex-basis: 35%;
+    color: aliceblue;
+}
+.right{
+    flex-basis: 60%;
+}
+.left h3{
+    color: aliceblue;
+    font-size: 2rem;
+    margin-top: 2rem; 
+    margin-left: 2rem;
+}
+
+.left p{
+    margin-top: 2rem;
+}
+.left p i{
+    color: aliceblue;
+
+}
+.left p img{
+    height: 2rem;
+    width: 2rem;
+}
+.left-content{
+    color: aliceblue;
+    width:100%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+    /* margin-right: 1rem; */
+    padding-right: 1rem;
+    transition:transform 0.5s
+}
+.left-content i:hover{
+    color: cyan;
+    transform: translateY(-5px);
+}
+.left a {
+    color: aliceblue;
+    font-size: 1.7rem;
+    margin-right: 15px;
+    display: inline-block;
+    transition:transform 0.5s;
+}
+.fa-regular{
+    margin-right: 1.2rem;
+}
+.left a:hover{
+    color: cyan;
+    transform: translateY(-5px);
+}
+.social{
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.right h3{
+    color: aliceblue;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem; 
+}
+.text{
+    padding: 0.65rem;
+    margin: 1rem;
+    width: 40rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color:rgb(23,31,56);
+    /* opacity: 3; */
+    font-size: 1rem;
+    color: rgb(255,255,255);
+}
+.message{
+    height: 6rem;
+}
+.submit{
+    margin: 1rem;
+    width: 40rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(37, 95, 235); 
+    color: azure;
+    font-size: 1.3rem;
+}
+.hover-effect{
+    transition: background 0.3s;
+}
+.hover-effect:hover{
+    color: cyan;
+    cursor: pointer;
+}
+.fas{
+display: none;
+}
+/* for small devices */
+@media only screen and (max-width: 600px){
+    .profile_pic{
+        display: block;
+        justify-content: space-evenly;
+        
+    }
+    .fas{
+        display: block;
+        font-size: 25px;
+        color: white;
+        margin-right: 1rem;
+    }
+    .nav-right ul{
+        background:cyan;
+        position: fixed;
+        top: 0;
+        right: -20rem;
+        width: 20rem;
+        height: 100vh;
+        padding-top: 5rem;
+        z-index: 2;
+    }
+    .nav-right ul li a{
+        display: block;
+        margin: 25px;
+
+    }
+    ul.fas{
+        position: absolute;
+        top:2.5rem;
+        left:2.5rem;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+}
