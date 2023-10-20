@@ -356,6 +356,9 @@ display: none;
         justify-content: space-evenly;
         
     } */
+    .body{
+        width: 60rem;
+    }
     .nav{
     background-color: #01071b;
   display: flex;
@@ -364,7 +367,7 @@ display: none;
   min-height: 4rem;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 26rem;
     }
     .nav-right{
         margin-left:2rem ;
@@ -373,7 +376,7 @@ display: none;
         display: block;
         font-size: 25px;
         color:white ;
-        margin-right: 1rem;
+        margin-right: 4rem;
     }
     .nav-right ul{
         background:#0e1630;
@@ -403,7 +406,7 @@ display: none;
     .pic img{
         
        height: 13rem;
-       width: 13rem;
+       width: 0;
     display: inline;
     border-radius: 50%;
     
@@ -411,13 +414,16 @@ display: none;
     .intro{
         margin-top: 7rem;
         color: aliceblue;
-        width: 50%;
+        width:auto;
         line-height: 3rem;
         font-size: 1.3rem;
         margin-left: 2rem;
         margin-right: 4rem;
         margin-bottom: 2rem;
     
+    }
+    .hello h1{
+        margin-left: 0rem;
     }
     .about{
         
@@ -426,24 +432,31 @@ display: none;
     }
     .aboutme{
         display: grid;
-        width: 100%;
-        height: 100%;
+        grid-template-rows:repeat(auto-fit,minmax(150px,1fr)) ;
+        grid-gap: 2px;
+        margin-top:1rem;
+    }
+    .design{
+        display: grid;
+        grid-template-rows:repeat(auto-fit,minmax(150px,1fr));
+        grid-gap: 20px;
     }
     
     .logo img{
         width:13rem;
         height: 13rem;
+        margin: 3rem;
     }
     .content{
         color:#808dad;;
-        width:45%;
+        width:100%;
         font-size: 1.3rem;
         line-height: 2rem;
         padding:1.2rem;
         background-color:rgb(23,31,56);
         
     }
-    .aboutme h2{
+    .hover-effect {
         color: aliceblue;
         font-size: 2rem;
         line-height: 3rem;
@@ -453,26 +466,33 @@ display: none;
     .service-list{
     
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        grid-template-rows: repeat(auto-fit,minmax(150px,1fr));
         grid-gap: 40px;
         margin-top: 50px;
     }
     .project-list{
         padding: 20px;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
         grid-gap: 40px;
         margin-top: 50px; 
-        height: 25rem; 
+        height: 0rem; 
     }
+    .card{
+        display: inline;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
     .ui img{
-        width: 75%;
-        height: 15%;
+        width:80%;
+        height:50%;
+        
     }
     .project-list button{
         width: 8rem;
         height: 2rem;
-        margin-left: 4rem;
+        margin-left: 1rem;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
         font-size: 1rem;
@@ -487,22 +507,12 @@ display: none;
 
 
     .container{
-        margin-top: 25rem;
+        margin-top:90rem;
     }
-    
-    /* .row{
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-    
-    } */
-    /* .left{
-        flex-basis: 5%;
-        color: aliceblue;
+    .row{
+        display: grid;
+        grid-template-rows:repeat(auto-fit,minmax(150px,1fr)) ;
     }
-    .right{
-        flex-basis: 45%;
-    } */
     .left h3{
         color: aliceblue;
         font-size: 2rem;
@@ -562,7 +572,7 @@ display: none;
     .text{
         padding: 0.65rem;
         margin: 1rem;
-        width: 16rem;
+        width: 20rem;
         height: 3rem;
         border-radius: 0.5rem;
         background-color:rgb(23,31,56);
@@ -572,11 +582,11 @@ display: none;
     }
     .message{
         height: 5rem;
-        width: 16rem;
+        width: 20rem;
     }
     .submit{
         margin: 1rem;
-        width: 16rem;
+        width: 20rem;
         height: 2.5rem;
         border-radius: 0.5rem;
         background-color: rgb(37, 95, 235); 
